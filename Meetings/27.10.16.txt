@@ -24,4 +24,3 @@ Chris  - Complete Implementing front end for the file upload system
 Matt   - Look into how Django works with inserting data into the database.
 Rowan  - Look into integrating HTML with Django, get backend to write cw submission details to SQL DB.
 George - Create input form on front end that causes coversheet generation, then save to server.
-
