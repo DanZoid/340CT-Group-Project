@@ -1,0 +1,22 @@
+Meeting 20/10/16
+Attendance: George, Matt, Rowan, Christoph, Dan
+
+
+What’s Been done?
+ 
+Dan: Nothing
+Chris: Started copying forms off Django documentation.
+Matt: Created the database using modules.py
+Carl: Did some php               ????????????????
+George: Created the docx creation using Django and run on the server to confirm it is working.
+Rowan: Set up the Django server, with libraries we need to use.
+  
+ 
+Deliverables for next week?
+
+Dan - Create the finished HTML pages (entry form for student details, upload/download buttons) compatible with Django. + last weeks work
+Carl - Create the finished HTML pages (entry form for student details, upload/download buttons) compatible with Django. + last weeks work
+Chris - Get forms working with HTML and Django
+Matt - Hash the passwords in SQL, allow for changing on submission state (assignment brief for more details).
+Rowan - integrate front end to the back end. (Waiting on Carl/Dan)
+George - integrate front end to the back end. (Waiting on Carl/Dan)

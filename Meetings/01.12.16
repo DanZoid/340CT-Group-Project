@@ -1,0 +1,17 @@
+Meeting 01/12/16
+Attendance: All
+
+
+Completed (pushed to github) & integrated (on server)? Description.
+ 
+Dan:   No - still needs to complete testing and implementation.
+Chris: No - still needs to complete testing and implementation.
+Matt:  No - still needs to complete testing and implementation.
+Carl:  No - still needs to complete testing and implementation.
+George: Yes, coversheet generation from Rowan's stored data and download working.
+Rowan: Yes, allow input and stored in database (integrated with George's code to use the data for coversheet generation).
+  
+ 
+Deliverables for next week:
+
+All: Complete code implementations and debugging.

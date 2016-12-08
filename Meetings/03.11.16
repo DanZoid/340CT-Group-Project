@@ -1,0 +1,26 @@
+Meeting 03/11/16
+Attendance: Matt, Christoph, Dan, Carl
+
+
+What’s Been done?
+
+
+~~~These deliverables were done before some clarification on the project meaning that they were not relevant after Tuesday 25/10.~~~
+
+ 
+Dan: Finished planning page design and noted on functions required for functionality.
+Chris: Completed local file upload planning to deploy to server this week. 
+Matt: worked further on integrating the database layer into an application.
+Carl: Completed HTML Registration form
+George: Testing coversheet download methods, working to configure Django to display a usable webpage.
+Rowan: Looked into HTML configuration with Django.
+  
+ 
+Deliverables for next week?
+
+Dan    - 
+Carl   - 
+Chris  - Deploy to live server for during the next week or two 
+Matt   - 
+Rowan  - Look into integrating HTML with Django, get backend to write cw submission details to SQL DB.
+George - Create input form on front end that causes coversheet generation, then save to server. 

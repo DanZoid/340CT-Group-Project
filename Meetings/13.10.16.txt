@@ -1,0 +1,22 @@
+Meeting 13/10/16
+Attendance: All
+
+
+What’s Been done?
+ 
+Dan: Nothing
+Chris: looking in to password hashing server side to store passwords aka nothing as done in the lab
+Matt: nothing
+Carl: nothing
+George: started working on DJANGO, set up proof of concept PDF creation and DJANGO server
+Rowan: made server into ready for development, created proof of concept password hasing, created the base class for the module info
+  
+ 
+Deliverables for next week?
+
+Dan: make a plan for the page system – wireframe, using balsamiq
+Chris: set up the database on the server using python - DJANGO 
+Matt: set up the database on the server using python - DJANGO
+Carl: create a few web page designs for each page, using balsamiq
+George: complete PDF generation system
+Rowan: set up DJANGO on server and make it accessible
