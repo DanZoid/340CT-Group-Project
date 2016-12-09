@@ -15,9 +15,9 @@ def upload(request):
         if form.is_valid():
             dan = Document (newfile=request.FILES['newfile'])
             dan.save()
-        #return HttpResponseRedirect(reverse('upload'))
-    #else:
-        #form = docform()
+        return HttpResponseRedirect(reverse('upload'))
+    else:
+        form = docform()
 
     return render(request, 'upload.html', )
 
