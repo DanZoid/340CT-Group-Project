@@ -1,0 +1,27 @@
+{% extends 'test/base_visitor.html' %}
+
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+    <head>
+    File upload system
+    </head>
+    <body>
+       <form action="{% url "upload" %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="Document" />
+            {{ form.Document.label_tag }}
+            {{ form.Document }}
+           <p></p>
+           <p><button type="submit" class="btn btn-success">Submit</button><p/>
+
+
+
+</div>
+        </form>
+    </body>
+
+</html>
+
+{% endblock %}
