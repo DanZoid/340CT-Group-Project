@@ -8,13 +8,12 @@
     File upload system
     </head>
     <body>
-       <form action="{% url "upload" %}" method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-            <input type="file" name="Document" />
-            {{ form.Document.label_tag }}
-            {{ form.Document }}
+       <form action="{% url "upload" %}" method="post" enctype="multipart/form-data"> <!-- This handles the form type this is needed for the views.py to speak to the HTML form-->
+            {% csrf_token %}                                                          <!-- A CSRF token is used to prevent malicous code from being executed by being checked beforehand-->
+            <input type="file" name="Document" />                                     <!-- Checking for a form and taking the code from the Document type to be used within the HTML form -->
            <p></p>
-           <p><button type="submit" class="btn btn-success">Submit</button><p/>
+           document.save()                                                            <!-- This tell the document to save when the submit button is pressed-->
+           <p><button type="submit" class="btn btn-success">Submit</button><p/>       <!-- This sumbit button is to send the new document over to the server for storage in the database.
 
 
 
