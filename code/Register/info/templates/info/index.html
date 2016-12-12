@@ -1,0 +1,19 @@
+<h1>
+View Submission Information
+</h1>
+<body>
+<table border="1">
+    <tr>
+    <th>Student ID</th>
+    <th>Module Code</th>
+    <th>Module Mark</th>
+    <th>Submission Date</th>
+    </tr>
+    {% for Marks in all_marks %}
+        <td>{{ Marks.StudentID }}</td>
+        <td>{{ Marks.ModuleCode }}</td>
+        <td>{{ Marks.ModuleMark }}</td>
+        <td>{{ Marks.SubmittedDate }}</td>
+    {% endfor %}
+</table>
+</body>
