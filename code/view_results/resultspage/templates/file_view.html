@@ -1,17 +1,23 @@
+{% extends 'test/index.html' %} <!-- includes the top banner from the main project -->
+
+
+{% block body %} <!-- puts everything within this container as a separate HTML block -->
 <!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>List Uploads</title>
+<title>List File Uploads</title>
 </head>
-
-HelloWorld
 
 <body>
 
+   Uploaded Coursework Files:
 <div>
-    <pre>{{ output }}</pre>
+     <pre>{{ FileList }}</pre> <!-- creates an output field on the page -->
 </div>
+
 
 </body>
 </html>
+
+{% endblock %} <!-- end of block container -->
