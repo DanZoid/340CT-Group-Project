@@ -17,6 +17,3 @@ def files(request):
 
 
     return render(request, 'file_view.html', {'FileList': file_list})  #returns the html page for the app
-
-
- 
