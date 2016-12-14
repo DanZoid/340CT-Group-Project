@@ -1,30 +1,30 @@
-{% extends 'test/base_visitor.html' %}
+{% extends 'test/index.html' %}
 {% block title %}Register{% endblock %}
 {% block register_active %}active{% endblock %}
 
 {% block body %}
-<div class="container-fluid">
+<div class="container-fluid"> #full width container, spanning entire width of viewport
 
-    <div class="row">
-        <div class="col-sm-12 col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h3>Register for an Account</h3>
-                    {% if error_message %}
+    <div class="row"> #create row
+        <div class="col-sm-12 col-md-6"> #create the size of the columns based on the device bootstrap sm = Tablets md = Desktops
+            <div class="panel panel-default"> #Creates a basic panel which is a bordered with the default panel colour from bootstrap
+                <div class="panel-body"> #Content to go within the panel
+                    <h3>Register for an Account</h3> #Title 
+                    {% if error_message %} 
                         <p><strong>{{ error_message }}</strong></p>
                     {% endif %}
-                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data"> #Defines type of form as horizontal and method 
                         {% csrf_token %}
-                        {% include 'test/form_template.html' %}
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-success">Submit</button>
+                        {% include 'test/form_template.html' %} #Loads template form_template.html and renders it with the current context 
+                        <div class="form-group"> 
+                            <div class="col-sm-offset-2 col-sm-10"> #Defines size of columns based on device type
+                                <button type="submit" class="btn btn-success">Submit</button> #Created submit button coloured green
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="panel-footer">
-                    Already have an account? <a href="{% url 'test:login_user' %}">Click here</a> to log in.
+                <div class="panel-footer"> #adds a footer to the panel
+                    Already have an account? <a href="{% url 'test:login_user' %}">Click here</a> to log in. #Hyperlinks Click Here text to login user function
                 </div>
             </div>
         </div>
