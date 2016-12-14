@@ -1,26 +1,20 @@
-{% extends 'test/base_visitor.html' %}
-{% block title %}Log In{% endblock %}
-{% block login_active %}active{% endblock %}
+{% extends 'test/index.html' %} #Tells the template engine that this template “extends” another template. locates the parent – in this case, “test/index.html”. replaces block tags
+{% block title %}Log In{% endblock %} #Replace block with title from index.html
+{% block login_active %}active{% endblock %} #replace block login_active with block from index.html
 
-{% block body %}
-<div class="container-fluid">
+{% block body %} #Replace block from parent index.html
+<div class="container-fluid"> #full width container, spanning entire width of viewport
 
-    <div class="row">
-        <div class="col-sm-12 col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h3>Log In</h3>
-                    {% if error_message %}
+    <div class="row"> #Created a crow 
+        <div class="col-sm-12 col-md-6"> #adds desired amount of columns 
+            <div class="panel panel-default"> #Creates a basic panel which is a bordered with the default panel colour from bootstrap
+                <div class="panel-body"> #Content to go within the panel 
+                    <h3>Log In</h3> #Login Title
+                    {% if error_message %} 
                         <p><strong>{{ error_message }}</strong></p>
                     {% endif %}
-                    <form class="form-horizontal" role="form" action="{% url 'test:login_user'%}" method="post" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="id_username">
-                                Username:
-                            </label>
-                            <div class="col-sm-10">
-                                <input id="id_username" maxlength="30" name="username" type="text">
+                    <form class="form-horizontal" role="form" action="{% url 'test:login_user'%}" method="post" enctype="multipart/form-data"> #uses boostrap horizontal form which will use the code within views.py for login_user, uses post method 
+        <input id="id_username" maxlength="30" name="username" type="text"> #input box for username
                             </div>
                         </div>
                         <div class="form-group">
@@ -28,18 +22,18 @@
                                 Password:
                             </label>
                             <div class="col-sm-10">
-                                <input id="id_password" maxlength="30" name="password" type="password">
+                                <input id="id_password" maxlength="30" name="password" type="password"> #input box for password gives it css name id_password
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-success">Submit</button>
+                                <button type="submit" class="btn btn-success">Submit</button> #Creates submit button giving it green colour
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="panel-footer">
-                    Don't have an account? <a href="{% url 'test:register' %}">Click here</a> to register.
+                    Don't have an account? <a href="{% url 'test:register' %}">Click here</a> to register. #Hyperlinks the words Click Here to register function
                 </div>
             </div>
         </div>
