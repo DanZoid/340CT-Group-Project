@@ -13,53 +13,50 @@
 
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
+<nav class="navbar navbar-inverse"> #Created a navigation bar through bootstrap and makes it black 
+    <div class="container-fluid"> #full width container, spanning entire width of viewport
 
-        <!-- Header -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{% url 'test:index' %}">Poodle</a>
+        
+        <div class="navbar-header">  #Information to place in the navigation bar 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavBar"> #Creating collapsable menu button for small devices or if minimized site
+                <span class="icon-bar"></span> #Creates one line of the three 
+                <span class="icon-bar"></span> #Creates one line of the three
+                <span class="icon-bar"></span> #Creates one line of the three 
+            </button> 
+            <a class="navbar-brand" href="{% url 'test:index' %}">Poodle</a> #Top left of the navigation bar will display the word Poodle and will hyperlink to Index function
         </div>
 
-        <!-- Items -->
-        <div class="collapse navbar-collapse" id="topNavBar">
-            <form class="navbar-form navbar-left" role="search" method="get" action="{% url 'test:index' %}">
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-
+        
+        <div class="collapse navbar-collapse" id="NavBar"> #Make the navigation bar collapse with the following items in the div  
+            <ul class="nav navbar-nav navbar-right"> #Add all buttons to the right of the navigation bar 
                 <li>
-                    <a href="{% url 'test:logout_user' %}">
-                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp; Logout
+                    <a href="{% url 'test:logout_user' %}"> #Link button to logout_user function
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp; Logout #Name the button Logout with boostrap glpyhicon off 
                     </a>
                 </li>
                 <li>
-                    <a href="{% url 'test:login_user' %}">
-                        <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp; Login
+                    <a href="{% url 'test:login_user' %}"> #Link button to login_user function
+                        <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp; Login #Name the button Logoin with boostrap glpyhicon log in
                     </a>
                 </li>
                 <li>
-                    <a href="{% url 'test:register' %}">
-                        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp; Register
+                    <a href="{% url 'test:register' %}"> #Link button to register function
+                        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp; Register #Name the button Register with boostrap glpyhicon plus sign 
                     </a>
                 </li>
                 <li>
-                   <a href="{% url 'upload' %}">
-                        <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp; Work Upload
+                   <a href="{% url 'upload' %}"> #Link button to upload app
+                        <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp; Work Upload #Name the button Work Upload with boostrap glpyhicon folder open 
                     </a>
                 </li>
-                <li>
-                        <a href="{% url 'list_files' %}">
-                        <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> View Uploaded Work
+                <li> 
+                        <a href="{% url 'list_files' %}"> #Link button to list_files function
+                        <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> View Uploaded Work #Name the button View Uploaded Work with boostrap glpyhicon th list  
                     </a>
                 </li>
                  <li>
-                        <a href=>
-                        <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Check Database
+                        <a href="{% url 'index' %}"> #Link button to index function
+                        <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Check Database #Name the button Check Database with boostrap glpyhicon cloud upload
                     </a>
                 </li>
             </ul>
