@@ -1,0 +1,23 @@
+{% extends 'test/index.html' %}
+
+
+{% block body %}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>List File Uploads</title>
+</head>
+
+<body>
+
+Uploaded Coursework Files:
+<div>
+     <pre> {{ FileList }} </pre> <!-- creates an output field on the page -->
+</div>
+
+
+</body>
+</html>
+
+{% endblock %}
