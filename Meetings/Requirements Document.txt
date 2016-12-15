@@ -1,0 +1,13 @@
+Requirements Document:
+
+Electronic Coursework system to manage student sumbissions. Must be able to:
+
+1) Generate coursewwork coversheets showing information including module codes and course details.
+
+2) Students must be able to upload work to the system and enter their studeit id and name. 
+
+3) Staff must be able to view the uploaded coursework for marking.
+
+4) Staff and Students must be able to register and login to the system to view the status of submissions.
+
+5) Generate reports for coursework submissions avaliable to staff.
